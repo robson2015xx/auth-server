@@ -13,5 +13,6 @@ RUN mvn -f /home/app/pom.xml clean package
 FROM openjdk:latest
 ARG JAR_FILE=target/springSecurity.jar
 ADD ${JAR_FILE} springSecurity.jar
+COPY ${JAR_FILE} springSecurity.jar
 EXPOSE 9000
 ENTRYPOINT ["java","-jar","/springSecurity.jar"]
