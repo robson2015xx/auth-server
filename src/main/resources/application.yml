@@ -1,0 +1,35 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: interview_service
+  application:
+    name: auth
+  security:
+    oauth2:
+      authorization-server:
+        issuer: http://localhost:9000
+        endpoint:
+          token-uri: /token
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#          - mappings
+#          - env
+#          - health
+#          - info
+
+server:
+  port: 9000
