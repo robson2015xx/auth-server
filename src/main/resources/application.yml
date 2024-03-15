@@ -10,7 +10,7 @@ spring:
   security:
     oauth2:
       authorization-server:
-        issuer: http://localhost:9000
+        issuer: https://auth-server-production-fa45.up.railway.app/
         endpoint:
           token-uri: /token
 
