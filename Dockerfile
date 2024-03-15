@@ -10,7 +10,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 # Package stage
 #
-FROM openjdk:latest
+FROM openjdk:11
 ARG JAR_FILE=target/springSecurity.jar
 ADD ${JAR_FILE} springSecurity.jar
 COPY ${JAR_FILE} springSecurity.jar
