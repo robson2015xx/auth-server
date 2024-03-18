@@ -23,7 +23,7 @@ public class ClientStoreConfig {
         .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
         .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-        .redirectUri("http://http://127.0.0.1:8080/login/oauth2/code/robs-s-oidc")
+        .redirectUri("http://127.0.0.1:8080/login/oauth2/code/robs-s-oidc")
         .scope(OidcScopes.OPENID)
         .scope(OidcScopes.PROFILE)
         .clientSettings(ClientSettings.builder()
